@@ -410,9 +410,6 @@ Development : [http://localhost:9000/{url}]
 ```
 
 
-```
-```
-
 
 ### GET IMAGE PROFILE
 
@@ -445,8 +442,7 @@ Development : [http://localhost:9000/{url}]
 ```
 
 
-```
-```
+
 
 ### POST IMAGE PROFILE
 
