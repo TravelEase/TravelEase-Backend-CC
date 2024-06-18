@@ -1,0 +1,1038 @@
+{
+	"info": {
+		"_postman_id": "4026c76e-af80-463d-8f92-456004bb14dd",
+		"name": "travelEaseEndpoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29708995"
+	},
+	"item": [
+		{
+			"name": "Users Get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Users Get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/users",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"119-8TNQ3yfCMpGeG5fLfCStBY6hZNA\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "2983648ce9badf1d75728aa18f035ac3;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 21:15:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "281"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"username\": \"John Doe\",\n        \"email\": \"johndoe@gmail.com\",\n        \"age\": 21,\n        \"location\": \"Jakarta\"\n    },\n    {\n        \"id\": 2,\n        \"username\": \"fara\",\n        \"email\": \"faraadevianaa@gmail.com\",\n        \"age\": 21,\n        \"location\": \"Bandung\"\n    },\n    {\n        \"id\": 13,\n        \"username\": \"Nadhiem Putra\",\n        \"email\": \"nadhiemputra@gmail.com\",\n        \"age\": 20,\n        \"location\": \"jakarta\"\n    }\n]"
+				},
+				{
+					"name": "Users Get id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/users/1",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"58-tQSzwMVnXG2NSB98l6CkKw94CV4\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "d96ff4d21c6e526e097692d187ad0e80;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 21:15:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"username\": \"John Doe\",\n    \"email\": \"johndoe@gmail.com\",\n    \"age\": 21,\n    \"location\": \"Jakarta\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Raditya\",\r\n    \"email\":\"radit@gmail.com\",\r\n    \"password\":\"password\",\r\n    \"confPassword\":\"password\",\r\n    \"age\":\"22\",\r\n    \"location\":\"Bandung\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/register",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1b-PmgJMn6tHN9IpsKiTt8vorfnrSA\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "f8c54a9b2146c9fefebdeb8886bc684a;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 21:22:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Register Berhasil\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"radit@gmail.com\",\r\n    \"password\":\"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app//login",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "set-cookie",
+							"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJlbWFpbCI6InJhZGl0QGdtYWlsLmNvbSIsImlhdCI6MTcxODc0NTg1OSwiZXhwIjoxNzE4ODMyMjU5fQ.oElOhospjZ6xaLxCkMWHr4px3Gny_Z2OyuW8_oNbC9k; Max-Age=86400; Path=/; Expires=Wed, 19 Jun 2024 21:24:19 GMT; HttpOnly"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"d1-HHjBQutAjvWjjDceWo0v2XZ5UxQ\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "d1f3160fecc88159b7db36a9ff3fbda9;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 21:24:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "209"
+						},
+						{
+							"key": "Expires",
+							"value": "Tue, 18 Jun 2024 21:24:19 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "private"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": 14,\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJlbWFpbCI6InJhZGl0QGdtYWlsLmNvbSIsImlhdCI6MTcxODc0NTg1OSwiZXhwIjoxNzE4NzQ1ODc5fQ.MRMwjVPFRBop7VUr92tRDxlD2GMTAmDiAIVCTiLJW_w\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Places GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Places GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/places",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"places"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"60e0-p3W5NuFFCeqEOS3m91IT+mAgwhs\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "f091b9c6138814b4fd3a88db621e1040;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:09:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24800"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/KotaTua.jpg\",\n        \"place_name\": \"Kota Tua\",\n        \"city\": \"Jakarta\",\n        \"price\": 5000,\n        \"rating\": 5,\n        \"category\": \"Budaya\",\n        \"description\": \"Kota tua di Jakarta, yang juga bernama Kota Tua, berpusat di Alun-Alun Fatahillah, yaitu alun-alun yang ramai dengan pertunjukan rutin tarian tradisional. Museum Sejarah Jakarta adalah bangunan era Belanda dengan lukisan dan barang antik, sedangkan Museum Wayang memamerkan boneka kayu khas Jawa. Desa Glodok, atau Chinatown, terkenal dengan makanan kaki lima, seperti pangsit dan mi goreng. Di dekatnya, terdapat sekunar dan kapal penangkap ikan di pelabuhan Sunda Kelapa yang kuno.\",\n        \"lat\": -6.137644799999999,\n        \"lon\": 106.8171245\n    },\n    {\n        \"id\": 2,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/MonumenNasional.jpg\",\n        \"place_name\": \"Monumen Nasional\",\n        \"city\": \"Jakarta\",\n        \"price\": 20000,\n        \"rating\": 5,\n        \"category\": \"Budaya\",\n        \"description\": \"Monumen Nasional atau yang populer disingkat dengan Monas atau Tugu Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang didirikan untuk mengenang perlawanan dan perjuangan rakyat Indonesia untuk merebut kemerdekaan dari pemerintahan kolonial Hindia Belanda. Pembangunan monumen ini dimulai pada tanggal 17 Agustus 1961 di bawah perintah presiden Soekarno dan dibuka untuk umum pada tanggal 12 Juli 1975. Tugu ini dimahkotai lidah api yang dilapisi lembaran emas yang melambangkan semangat perjuangan yang menyala-nyala. Monumen Nasional terletak tepat di tengah Lapangan Medan Merdeka\",\n        \"lat\": -6.1753924,\n        \"lon\": 106.8271528\n    },\n    {\n        \"id\": 3,\n        \"image_url\": \"https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit1440960gsm/events/2021/12/08/9c6ae660-1799-4276-b81d-f8b0b85669d6-1638949473006-1e6c55a1b1edca6bf250012af2cc79e2.jpg\",\n        \"place_name\": \"Dunia Fantasi\",\n        \"city\": \"Jakarta\",\n        \"price\": 270000,\n        \"rating\": 5,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Dunia Fantasi atau disebut juga Dufan adalah tempat hiburan yang terletak di kawasan Taman Impian Jaya Ancol, Jakarta Utara, Indonesia. Dufan diresmikan dan dibuka pada tanggal 29 Agustus 1985.\",\n        \"lat\": 6.125312399999999,\n        \"lon\": 106.8335377\n    },\n    {\n        \"id\": 4,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/Museum%20Layang-layang.jpg\",\n        \"place_name\": \"Museum Layang-layang\",\n        \"city\": \"Jakarta\",\n        \"price\": 10000,\n        \"rating\": 5,\n        \"category\": \"Budaya\",\n        \"description\": \"Museum Layang-Layang adalah sebuah museum yang terletak di Jl. H. Kamang No. 38, Pondok Labu, Jakarta Selatan. Museum ini merupakan museum layang-layang pertama di Indonesia. Jumlah koleksi layang-layang di museum ini berjumlah 600, tetapi jumlah tersebut terus bertambah seiring datangnya koleksi-koleksi baru dari para pelayang daerah dan luar negeri maupun layang-layang yang dibuat sendiri oleh karyawan museum. Museum Layang-Layang buka setiap hari mulai pukul 09.00-16.00 WIB. Hari libur nasional Museum Layang-layang tutup.\",\n        \"lat\": -6.3080282,\n        \"lon\": 106.790548\n    },\n    {\n        \"id\": 5,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/MuseumFatahillah.jpg\",\n        \"place_name\": \"Museum Fatahillah\",\n        \"city\": \"Jakarta\",\n        \"price\": 5000,\n        \"rating\": 4,\n        \"category\": \"Budaya\",\n        \"description\": \"Museum Fatahillah memiliki nama resmi Museum Sejarah Jakarta adalah sebuah museum yang terletak di Jalan Taman Fatahillah No. 1, Jakarta Barat dengan luas lebih dari 1.300 meter persegi.\\\\\\\\nBangunan ini dahulu merupakan balai kota Batavia (bahasa Belanda: Stadhuis van Batavia) yang dibangun pada tahun 1707-1710 atas perintah Gubernur-Jendral Joan van Hoorn. Bangunan ini menyerupai Istana Dam di Amsterdam, terdiri atas bangunan utama dengan dua sayap di bagian timur dan barat serta bangunan sanding yang digunakan sebagai kantor, ruang pengadilan, dan ruang-ruang bawah tanah yang dipakai sebagai penjara. Pada tanggal 30 Maret 1974, bangunan ini kemudian diresmikan oleh bapak Ali Sadikin sebagai Museum Sejarah Jakarta.\",\n        \"lat\": -6.136448899999999,\n        \"lon\": 106.8130661\n    },\n    {\n        \"id\": 6,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/JembatanKotaIntan.jpg\",\n        \"place_name\": \"Jembatan Kota Intan\",\n        \"city\": \"Jakarta\",\n        \"price\": 0,\n        \"rating\": 4,\n        \"category\": \"Budaya\\r\\n\",\n        \"description\": \"Jembatan Kota Intan adalah jembatan tertua di Indonesia yang dibangun pada tahun 1628 oleh pemerintah Vereenigde Oostindische Compagnie atau VOC, atau masyarakat kita lebih familiar dengan sebutan Kumpeni. Jembatan itu kini terletak di Kali Besar kawasan Kota Tua wilayah Jakarta Barat dan berada di bawah pengelolaan Dinas Pariwisata dan Kebudayaan Provinsi DKI Jakarta.\",\n        \"lat\": -6.1314572,\n        \"lon\": 106.8106169\n    },\n    {\n        \"id\": 7,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/MuseumSonobudoyoUnitI.jpg\",\n        \"place_name\": \"Museum Sonobudoyo Unit I\",\n        \"city\": \"Yogyakarta\",\n        \"price\": 5000,\n        \"rating\": 5,\n        \"category\": \"Budaya\",\n        \"description\": \"Museum Sonobudoyo adalah museum dan perpustakaan sejarah dan budaya Jawa di Yogyakarta, Indonesia. Museum ini berisi koleksi artefak Jawa terlengkap, setelah Museum Nasional di Jakarta. Selain keramik era Neolitikum dan patung perunggu abad ke-8, museum ini juga menyimpan koleksi wayang, berbagai senjata kuno (seperti keris), dan topeng Jawa. Museum Sonobudoyo terdiri dari dua unit, Unit I terletak di Jalan Trikora No. 6 Yogyakarta, dan Unit II terletak di Ndalem Condrokiranan, Wijilan, di sebelah timur alun-alun utama (utara) kota.\",\n        \"lat\": -7.8024499,\n        \"lon\": 110.3639555\n    },\n    {\n        \"id\": 8,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/TamanPintarYogyakarta.jpg\",\n        \"place_name\": \"Taman Pintar Yogyakarta\",\n        \"city\": \"Yogyakarta\",\n        \"price\": 6000,\n        \"rating\": 4,\n        \"category\": \"Hiburan\",\n        \"description\": \"Taman Pintar Yogyakarta (bahasa Jawa: Hanacaraka,ꦠꦩꦤ꧀​ꦥꦶꦤ꧀ꦠꦂ​ꦔꦪꦺꦴꦒꦾꦏꦂꦠ, Taman Pintar Ngayogyakarta) adalah wahana wisata yang terdapat di pusat Kota Yogyakarta, tepatnya di Jalan Panembahan Senopati No. 1-3, Yogyakarta, di kawasan Benteng Vredeburg. Taman ini memadukan tempat wisata rekreasi maupun edukasi dalam satu lokasi. Taman Pintar memiliki arena bermain sekaligus sarana edukasi yang terbagi dalam beberapa zona. Akses langsung kepada pusat buku eks Shopping Centre juga menambah nilai lebih Taman Pintar. Tempat rekreasi ini sangat baik untuk anak-anak pada masa perkembangan.\\\\\\\\nBeberapa tahun ini Taman Pintar menjadi alternatif tempat berwisata bagi masyarakat Yogyakarta maupun luar kota.Taman ini, khususnya pada wahana pendidikan anak usia dini dilengkapi dengan teknologi interaktif digital serta pemetaan video yang akan memacu imajinasi anak serta ketertarikan mereka terhadap teknologi. Pada saat ini ada 35 zona dan 3.500 alat peraga permainan yang edukatif.\\\"\",\n        \"lat\": -7.800671500000001,\n        \"lon\": 110.3676551\n    },\n    {\n        \"id\": 9,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/GrojoganWatuPurboBangunrejo.jpg\",\n        \"place_name\": \"Grojogan Watu Purbo Bangunrejo\",\n        \"city\": \"Yogyakarta\",\n        \"price\": 10000,\n        \"rating\": 4,\n        \"category\": \"Hiburan\",\n        \"description\": \"Objek wisata itu tak adalah Grojogan Watu Purbo yang berada di Bangunrejo, Merdikorejo, Kecamatan Tempel. Objek wisata itu sekitar setahun terakhir cukup populer di kalangan wisatawan karena memiliki pemandangan eksotis berupa air terjun yang memiliki enam tingkatan. Wisatawan yang datang rata-rata menjadikan air terjun itu sebagai latar untuk swafoto karena pemandangannya yang dinilai instagramable. Grojokan Watu Purbo ini tepatnya berlokasi di aliran Kali Krisak, yang merupakan jalur dari lahar dingin yang mengalir dari Gunung Merapi. Pemandangan kawasan ini eksotis karena dikepung pepohonan asri serta hamparan sawah. Munculnya air terjun atau grojogan ini berasal dari enam dam dengan ketinggian bervariasi tak lebih dari 10 meter.\",\n        \"lat\": -7.6340172,\n        \"lon\": 110.33837\n    },\n    {\n        \"id\": 10,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/DesaWisataKelor.jpg\",\n        \"place_name\": \"Desa Wisata Kelor\",\n        \"city\": \"Yogyakarta\",\n        \"price\": 0,\n        \"rating\": 4,\n        \"category\": \"Hiburan\",\n        \"description\": \"Desa wisata Kelor merupakan salah satu desa yang ada di kabupaten Sleman yang saat ini sedang dikembangkan menjadi desa wisata. Desa wisata Kelor ini menawarkan suasana pedesaan yang penduduknya bermata pencaharian sebagai petani, peternak, dan budidaya jamur. Banyak tanaman hijau yang membentang luas dengan pemandangan alam yang asri. Desa wisata Kelor ini memiliki masyarakat yang ramah dan memiliki lingkungan desa yang sangat nyaman. Desa Kelor ini juga memiliki sungai, dan air di sungai tersebut masih jernih dan indah.\",\n        \"lat\": 7.641025800000001,\n        \"lon\": 110.3622794\n    },\n    {\n        \"id\": 11,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/JalanBraga.jpg\",\n        \"place_name\": \"Jalan Braga\",\n        \"city\": \"Bandung\",\n        \"price\": 0,\n        \"rating\": 5,\n        \"category\": \"Budaya\",\n        \"description\": \"Jalan Braga adalah nama sebuah jalan utama di kota Bandung, Indonesia. Nama jalan ini cukup dikenal sejak masa pemerintahan Hindia Belanda. Sampai saat ini nama jalan tersebut tetap dipertahankan sebagai salah satu maskot dan objek wisata kota Bandung yang dahulu dikenal sebagai Parijs van Java.\",\n        \"lat\": -6.9150534,\n        \"lon\": 107.6089842\n    },\n    {\n        \"id\": 12,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/KebunTanamanObatSariAlam.jpg\",\n        \"place_name\": \"Kebun Tanaman Obat Sari Alam\",\n        \"city\": \"Bandung\",\n        \"price\": 0,\n        \"rating\": 5,\n        \"category\": \"Wisata\",\n        \"description\": \"Kebun Tanaman Obat Sari Alam lebih terkenal dengan sebutan wisata pengobatan herbal, karena disana terdapat banyak sekali tanaman yang dijadikan sebagai pengobatan alternative. Kebun Tanaman Obat Sari Alam lebih dikenal oleh orang Bandung dengan sebutan KTO Sari Alam. Lokasi: Jl. Raya Ciwidey bandung km 26 no 8 rt 1 rw 2 kampung Andir, Cukanggenteng, Kec. Pasirjambu, kab Bandung, Jawa Barat 40972\\\",\\r\\n        \\\"Category\\\": \\\"Wisata\",\n        \"lat\": -6.601320999999999,\n        \"lon\": 106.632734\n    },\n    {\n        \"id\": 13,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/GunungTangkubanperahu.jpg\",\n        \"place_name\": \"GunungTangkuban perahu\",\n        \"city\": \"Bandung\",\n        \"price\": 30000,\n        \"rating\": 4,\n        \"category\": \"Wisata\",\n        \"description\": \"Gunung Tangkuban Parahu adalah salah satu gunung yang terletak di Provinsi Jawa Barat, Indonesia. Sekitar 20 km ke arah utara Kota Bandung, dengan rimbun pohon pinus dan hamparan kebun teh di sekitarnya, Gunung Tangkuban Parahu mempunyai ketinggian setinggi 2.084 meter. Bentuk gunung ini adalah Stratovulcano dengan pusat erupsi yang berpindah dari timur ke barat. Jenis batuan yang dikeluarkan melalui letusan kebanyakan adalah lava dan sulfur, mineral yang dikeluarkan adalah sulfur belerang, mineral yang dikeluarkan saat gunung tidak aktif adalah uap belerang. Daerah Gunung Tangkuban Parahu dikelola oleh Perum Perhutanan. Suhu rata-rata hariannya adalah 17oC pada siang hari dan 2 °C pada malam hari.\",\n        \"lat\": -6.759637700000001,\n        \"lon\": 107.6097807\n    },\n    {\n        \"id\": 14,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/BalaiKotaSurabaya.jpg\",\n        \"place_name\": \"Balai Kota Surabaya\",\n        \"city\": \"Surabaya\",\n        \"price\": 0,\n        \"rating\": 5,\n        \"category\": \"Budaya\",\n        \"description\": \"Surabaya sebagai Resort Gemeente (Haminte) secara resmi mulai berdiri pada tanggal 1 April 1906. Sebelumnya Surabaya merupakan bagian dari karesidenan Pemerintah Haminte dijalankan oleh Dewan Haminte yang diketuai oleh asisten residen sebagai Kepala Daerah.\\\\\\\\nTahun 1916 diangkat Wali kota Surabaya pertama, A. Meyroos yang bertugas sampai tahun 1921. Baru setelah wali kota yang kedua, G.J. DIJKERMAN, terpilih, rencana membangun gedung Balai Kota diwujudkan.\\\\\\\\nGedung utama Balai Kota di Taman Surya di daerah Ketabang itu mulai dibangun pada tahun 1923 dan mulai ditempati pada tahun 1927. Arsiteknya ialah C. Citroen dan pelaksanaannya H.V. Hollandsche Beton Mij. Biaya seluruhnya, termasuk perlengkapan dan lain-lainnya, menghabiskan dana sekitar 1000 gulden.\\\\\\\\n\\\\\\\\nUkuran gedung utama: panjang 102 m dan lebar 19 m. Konstruksinya terdiri dari tiang-tiang pancang beton bertulang yang ditanam, sedangkan dinding-dindingnya diisi dengan bata dan semen. Atapnya terbuat dari rangka besi dan ditutup dengan sirap, Belakangan atap ini kemudian diganti dengan genteng.\\\\\\\\nSetelah Republik Indonesia diproklamirkan, dilantiklah Radjamin Nasution sebagai Wali kota Kota Besar Surabaya. Berdasarkan Penpres 1959 No. 16 maka ditetapkan Wali kota menjadi Kepala Daerah Kota Surabaya. Tahun 1965 Kotapraja Surabaya resmi menjadi Kotamadya.\",\n        \"lat\": -7.2592948,\n        \"lon\": 112.7470512\n    },\n    {\n        \"id\": 15,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/HappyfarmCiwidey.jpg\",\n        \"place_name\": \"Happyfarm Ciwidey\",\n        \"city\": \"Bandung\",\n        \"price\": 15000,\n        \"rating\": 4,\n        \"category\": \"Wisata\",\n        \"description\": \"Objek wisata alam dan edukasi tengah banyak menjamur akhir-akhir ini. Selain De Ranch dan Farmhouse Lembang, ada juga Happy Farm Ciwidey di Bandung. Objek wisata ini masih terbilang baru, karena baru bulan Juni 2019 ini berdiri. Konsepnya hampir sama, wisata alam dan peternakan dengan unsur edukasi. Sangat cocok menjadi tujuan wisata keluarga, terutama untuk anak-anak. Dan semakin seru karena bermain di area outdoor dengan udara sejuk.\",\n        \"lat\": -7.1147877,\n        \"lon\": 107.4380865\n    },\n    {\n        \"id\": 16,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/seaworld.jpg\",\n        \"place_name\": \"Sea World\",\n        \"city\": \"Jakarta\",\n        \"price\": 115000,\n        \"rating\": 5,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Seaworld Indonesia adalah sebuah miniatur pesona laut yang terdapat dalam kompleks wisata pertama di Taman Impian Jaya Ancol.\\\\nPada tanggal 2 Oktober 1992, Gubernur DKI masa itu, Wiyogo Atmodarminto meletakkan batu pertama pembangunan Seaworld Indonesia. Tidak sampai dua tahun, pada tanggal 3 Juni 1994 SeaWorld Indonesia sudah mulai beroperasi. Area Seaworld seluas 3 hektare dengan luas bangunan utama 4.500 m2 berisi berbagai macam akuarium, lorong Antasena (lorong bawah air), perpustakaan, museum, terapi ikan dokter, glow theatre, komputer edukatif layar sentuh berisi informasi berbagai spesies di Seaworld dan bermacam fasilitas pelengkap untuk pengunjung seperti tempat makan, toko suvenir, dan ruang serba guna.\",\n        \"lat\": -6.126477500000001,\n        \"lon\": 106.842963\n    },\n    {\n        \"id\": 17,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/Museum-Keramik.jpg\",\n        \"place_name\": \"Museum Seni Rupa dan Kramik\",\n        \"city\": \"Jakarta\",\n        \"price\": 5000,\n        \"rating\": 4,\n        \"category\": \"Budaya\",\n        \"description\": \"Museum Seni Rupa dan Keramik (Indonesia: Museum Seni Rupa dan Keramik) adalah sebuah museum di Jakarta, Indonesia. Museum ini didedikasikan khusus untuk menampilkan seni rupa tradisional dan keramik Indonesia. Museum ini terletak di sisi timur Lapangan Fatahillah, dekat Museum Sejarah Jakarta dan Museum Wayang.\",\n        \"lat\": -6.1342598,\n        \"lon\": 106.814552\n    },\n    {\n        \"id\": 18,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/JakartaAquariumdanSafari.jpg\",\n        \"place_name\": \"Jakarta Aquarium dan Safari\",\n        \"city\": \"Jakarta\",\n        \"price\": 185000,\n        \"rating\": 5,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Jika telah mengunjungi Seaworld Ancol, mungkin sudah tidak asing lagi dengan serunya menyaksikan biota laut. Jika belum puas, pengunjung dapat mencoba mengunjungi wisata satwa laut unik di Jakarta Aquarium. Jakarta Aquarium menempati areal seluas ±7000 m2 ini menawarkan atraksi wisata laut modern yang tidak hanya menghibur, juga edukatif. Meskipun tidak seluas SeaWorld Ancol, taman rekreasi ini juga menawarkan wahana dan atraksi yang tak kalah menariknya.\",\n        \"lat\": -6.1752647,\n        \"lon\": 106.7904684\n    },\n    {\n        \"id\": 19,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/kampungpelangi.jpg\",\n        \"place_name\": \"Kampung Pelangi\",\n        \"city\": \"Semarang\",\n        \"price\": 3000,\n        \"rating\": 4,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Kampung pelangi atau dalam bahasa Inggris disebut Rainbow Village merupakan sebutan untuk daerah atau kampung yang rumah-rumah penduduknya dicat dengan warna-warni. Sebenarnya Kampung Pelangi pada awalnya merupakan daerah kumuh yang dikemudian secara kreatif diubah menjadi daerah yang menarik untuk dijadikan sebagai destinasi wisata, terutama bagi masyarakat yang senang atau sedang mencari spot yang menarik untuk mengabadikan momen.\\\\nBanyak daerah-daerah di Indonesia, terutama di jawa memliki tempat yang disebut Kampung pelangi, antara lain di Malang, Semarang, Jakarta, Bandung, dan kota-kota lainnya. Contoh kampung seperti ini yaitu, kampung warna-warni di Jodipan dan Tridi, Kota Malang, Jawa Timur.\",\n        \"lat\": -6.988881200000001,\n        \"lon\": 110.4083781\n    },\n    {\n        \"id\": 20,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/LawangSewu.jpg\",\n        \"place_name\": \"Lawang Sewu\",\n        \"city\": \"Semarang\",\n        \"price\": 10000,\n        \"rating\": 5,\n        \"category\": \"Budaya\",\n        \"description\": \"Lawang Sewu (\\\"\\\"Seribu Pintu\\\"\\\") (bahasa Jawa: ꦭꦮꦁ​ꦱꦺꦮꦸ, translit. Lawang Sèwu) adalah landmark di Semarang, Jawa Tengah, Indonesia, yang dibangun sebagai kantor pusat Perusahaan Kereta Api Hindia Belanda. Bangunan era kolonial terkenal sebagai rumah berhantu dan lokasi syuting, meskipun pemerintah kota Semarang telah berusaha mengubah citra itu.\",\n        \"lat\": -6.9839099,\n        \"lon\": 110.4104342\n    },\n    {\n        \"id\": 21,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/PantaiBaruna.jpg\",\n        \"place_name\": \"Pantai Baruna\",\n        \"city\": \"Semarang\",\n        \"price\": 3000,\n        \"rating\": 4,\n        \"category\": \"Bahari\",\n        \"description\": \"kunjungi Pantai Baruna yang berada di Kota Semarang, Jawa Tengah! Pantai yang satu ini akan memberikan pengalaman wisata yang berbeda. Pasalnya, di sini tidak ada hamparan pasir. Memang Pantai Baruna merupakan objek wisata ‘tidak resmi’ milik Kota Semarang. Pantai ini berada di belakang kawasan pabrik semen. Sehingga tidak ada kepadatan wisatawan atau tempat berselancar di sini. Yang ada hanyalah hamparan padang rumput dan ilalang di hadapan Laut Jawa yang tenang.\",\n        \"lat\": -6.945105199999999,\n        \"lon\": 110.3982398\n    },\n    {\n        \"id\": 22,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/GerejaPerawanMariaTakBerdosaSurabaya.jpg\",\n        \"place_name\": \"Gereja Perawan Maria Tak Berdosa Surabaya\",\n        \"city\": \"Surabaya\",\n        \"price\": 10000,\n        \"rating\": 5,\n        \"category\": \"Tempat Ibadah\",\n        \"description\": \"Gereja Katolik Kelahiran Santa Perawan Maria merupakan salah satu gereja tua di kota Surabaya, Jawa Timur, Indonesia. Berlokasi di Jalan Kepanjen, Surabaya, bangunan religius ini berdampingan dengan gedung SMA Katolik Frateran Surabaya.\",\n        \"lat\": -7.2420758,\n        \"lon\": 112.7368158\n    },\n    {\n        \"id\": 23,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/AtlantisLandSurabaya.jpg\",\n        \"place_name\": \"Atlantis Land Surabaya\",\n        \"city\": \"Surabaya\",\n        \"price\": 125000,\n        \"rating\": 4,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Sejak diresmikan pada bulan Desember 2017, Atlantis Land Kenjeran Surabaya sudah sukses mendatangkan banyak pengunjung. Taman wisata air ini menjadi taman air terbesar di Kota Surabaya. Lokasinya terletak satu wilayah dengan Kenjeran Park, atau familiar disebut Ken Park. Tepatnya di Jalan Pantai Ria Kenjeran, Sukolilo Baru, Bulak, Surabaya, Jawa Timur. Taman wisata air ini memiliki luas sekitar 15 hektar dengan desain asli milik arsitek Australia. Tema yang diambil untuk taman wisata air ini adalah istana bawah laut. Dengan tema tersebut, gerbang masuk Atlantis Land Kenjeran Surabaya memiliki dinding bangunan utama berwarna biru. Dinding utama tersebut dihiasi dengan garis-garis menyerupai ombak berwarna putih. Atapnya berwarna kuning kecokelatan dan menjulang tinggi bagai istana. Di kedua sisi bangunan utama, terdapat bangunan berdinding cokelat dengan ornamen belahan kayu. Bangunan ini memberi kesan bagaikan kapal pesiar yang belum rampung dibuat. Sebuah patung neptunus berwarna kuning juga terlihat menghiasi salah satu sudut tembok taman ini. Dekorasi yang ada di Atlantis Land Kenjeran akan memberi suasana bagaikan berada di sebuah kastil.\",\n        \"lat\": -7.2516189,\n        \"lon\": 112.8009694\n    },\n    {\n        \"id\": 24,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/museumkesehatan.jpg\",\n        \"place_name\": \"Museum Kesehatan Dr. Adhyatma\",\n        \"city\": \"Surabaya\",\n        \"price\": 10000,\n        \"rating\": 4,\n        \"category\": \"Budaya\",\n        \"description\": \"Museum Kesehatan Dr. Adhyatma, MPH adalah museum kesehatan yang dirintis Pemerintah indonesia melalui Departemen Kesehatan pada tanggal 16 Desember 2003. Museum Kesehatan Puslitbang Pelayanan dan Tehnologi kesehatan (PUSLITBANG YANTEKKES) diresmikan oleh Menteri Kesehatan pada tanggal 14 September 2004, sehingga diberi nama Museum Kesehatan Dr. Adhyatma, MPH.Museum Kesehatan Dr. Adhyatma, MPH, berlokasi di Jl. Indrapura 17 Surabaya Jawa Timur.\",\n        \"lat\": -7.240327999999999,\n        \"lon\": 112.731431\n    },\n    {\n        \"id\": 25,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/duriangarden.jpg\",\n        \"place_name\": \"Durian Gardens and Tourism Education Watu Simbar\",\n        \"city\": \"Semarang\",\n        \"price\": 5000,\n        \"rating\": 4,\n        \"category\": \"Cagar Alam\",\n        \"description\": \"Perlu diketahui, watu simbar ini merupakan lokasi wisata yang menawarkan edukasi dari berbagai macam pohon durian. Walaupun terkesan biasa saja, hal tersebut lah yang sebenarnya menjadi keunikan tempat ini. Apabila seseorang datang kemari, orang tersebut akan bisa mempelajari banyak hal tentang pohon durian. Selain bisa mempelejari berbagai macam hal tentang pohon durian tersebut, tentu lah para pengunjung pun bisa membeli durian yang berada disana.\",\n        \"lat\": -7.096707899999999,\n        \"lon\": 110.3900517\n    },\n    {\n        \"id\": 26,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/KampoengKopiBanaran.jpg\",\n        \"place_name\": \"Kampoeng Kopi Banaran\",\n        \"city\": \"Semarang\",\n        \"price\": 200000,\n        \"rating\": 4,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Kampoeng Kopi Banaran, sebuah agro wisata perkebunan kopi di Kabupaten Semarang. Tempat wisata ini memiliki luas 462 hektar yang sebagian dijadikan resort dan tempat wisata. Lokasinya berada di Areal Perkebunan Kopi Kebun Getas Afdeling Assinan tepatnya Jl. Raya Semarang – Solo Km. 35. Lokasi Kampoeng Kopi Banaran yang berada di ketinggian 480 – 600m dpl membuat suhu udara disana sejuk antara 23ºC – 27ºC. Jadi cocok banget buat pelesir mencari udara dingin dan segar dengan pemandangan indah. Menghilangkan penat kesibukan Kota besar, di tengah perkebunan yang asri.\",\n        \"lat\": -7.253900499999999,\n        \"lon\": 110.4414953\n    },\n    {\n        \"id\": 27,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/TamanMiniaturKeretaApi.jpg\",\n        \"place_name\": \"Taman Miniatur Kereta Api\",\n        \"city\": \"Bandung\",\n        \"price\": 15000,\n        \"rating\": 4,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Salah satu wisata yang ramai di Bandung adalah Taman Miniatur Kereta Api yang berada di taman wisata Floating Market Lembang. Dengan menghadirkan pernak-pernik kereta api secara lengkap dan sangat detail membuat taman miniatur kereta api ini seolah-olah benar hidup. Tak heran jika objek wisata ini mengundang ribuan orang untuk menikmati sekaligus belajar banyak tentang perkeretaan api baik di Indonesia maupun dunia. Taman miniatur ini menyediakan toko suvenir yang menjual beragam jenis miniatur kendaraan mulai dari mobil, pesawat dan kereta api tentunya. Selain itu, bagi pengunjung yang ingin menikmati sajian aneka ragam kuliner bisa langsung ke Floating Market Lembang. Bagi pengunjung yang berasal dari luar kota dapat menginap di hotel-hotel yang berdekatan dengan lokasi taman miniatur. Jarak hotel dari taman miniatur sekitar 200 meter sampai 1 kilometer. Hotel-hotel tersebut antara lain Grand Hotel Lembang, Hotel Cemara Asri, Hotel Buah Sinuan dan Hotel Pesona Bamboe. Tarif sewa hotel menginap semalam antara Rp 200.000 hingga Rp 1.000.000.\",\n        \"lat\": -6.817327,\n        \"lon\": 107.61794\n    },\n    {\n        \"id\": 28,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/bandung-indah-waterpark.jpg\",\n        \"place_name\": \"Water Park Bandung Indah\",\n        \"city\": \"Bandung\",\n        \"price\": 50000,\n        \"rating\": 4,\n        \"category\": \"Taman Hiburan\",\n        \"description\": \"Bandung Indah Waterpark merupakan salah satu kolam renang yang ada di Bandung. Menyediakan berbagai wahana permainan air yang cocok bagi keluarga. Terdapat kolam renang untuk dewasa dan anak-anak. Pengunjung dapat melakukan olahraga renang dan rekreasi.\",\n        \"lat\": -6.980580700000001,\n        \"lon\": 107.5856567\n    },\n    {\n        \"id\": 29,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/masjidsalmanITB.jpg\",\n        \"place_name\": \"Masjid Salman ITB\",\n        \"city\": \"Bandung\",\n        \"price\": 0,\n        \"rating\": 5,\n        \"category\": \"Tempat Ibadah\",\n        \"description\": \"Masjid Salman ITB adalah masjid kampus yang terletak di Jalan Ganesha 7, Lebak Siliwangi, Coblong, Kota Bandung atau tepat di depan area Kampus ITB Ganesha. Dengan luas lahan 7800 m2 dan luas bangunan masjid 1225 m2, Masjid Salman dilengkapi dengan berbagai fasilitas penunjang seperti kantin, air minum gratis, mini market, dan ruang serbaguna. Masjid yang dibuka pada tahun 1972 ini merupakan masjid kampus pertama di Indonesia.\",\n        \"lat\": -6.893664299999999,\n        \"lon\": 107.611271\n    },\n    {\n        \"id\": 30,\n        \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/taman-sejarah-bandung.jpg\",\n        \"place_name\": \"Taman Sejarah Bandung\",\n        \"city\": \"Bandung\",\n        \"price\": 0,\n        \"rating\": 4,\n        \"category\": \"Budaya\",\n        \"description\": \"Taman Sejarah Bandung adalah taman yang terletak di belakang Balai Kota Bandung, kompleks Pemerintahan Kota Bandung. Taman ini berfungsi untuk mengenalkan sejarah di Kota Bandung. Taman ini dilengkapi informasi mengenai pemimpin kota Bandung dari masa ke masa. Pembangunan taman ini menghabiskan anggaran sekitar 3,5 miliar rupiah.\",\n        \"lat\": -6.9103086,\n        \"lon\": 107.6098619\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Places ID GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Places ID GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/places/1",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"places",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"2cd-+MqH1rxCtjMEQCAFXNpi1CMI1UY\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "4e36c5fa20ed2d73803aeb20781f4641;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:11:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "717"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"image_url\": \"https://storage.googleapis.com/traveleasebucket/places/KotaTua.jpg\",\n    \"place_name\": \"Kota Tua\",\n    \"city\": \"Jakarta\",\n    \"price\": 5000,\n    \"rating\": 5,\n    \"category\": \"Budaya\",\n    \"description\": \"Kota tua di Jakarta, yang juga bernama Kota Tua, berpusat di Alun-Alun Fatahillah, yaitu alun-alun yang ramai dengan pertunjukan rutin tarian tradisional. Museum Sejarah Jakarta adalah bangunan era Belanda dengan lukisan dan barang antik, sedangkan Museum Wayang memamerkan boneka kayu khas Jawa. Desa Glodok, atau Chinatown, terkenal dengan makanan kaki lima, seperti pangsit dan mi goreng. Di dekatnya, terdapat sekunar dan kapal penangkap ikan di pelabuhan Sunda Kelapa yang kuno.\",\n    \"lat\": -6.137644799999999,\n    \"lon\": 106.8171245\n}"
+				}
+			]
+		},
+		{
+			"name": "Itinerary GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Itinerary GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/itinerary",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"itinerary"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"1d6-dlY63M3TlfB0y4LEya/dRBj8o4Y\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "fd563dae7cbfc0a810b539d82eb64119;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:13:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "470"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"start_date\": \"2024-06-20\",\n        \"end_date\": \"2024-06-23\",\n        \"city\": \"Bandung\",\n        \"category\": \"Budaya\",\n        \"numberofpeople\": 2,\n        \"added_at\": \"2024-06-19T02:14:26.000Z\",\n        \"createdAt\": \"2024-06-18T21:13:54.000Z\",\n        \"updatedAt\": \"2024-06-18T21:13:54.000Z\"\n    },\n    {\n        \"id\": 2,\n        \"start_date\": \"2024-06-23\",\n        \"end_date\": \"2024-06-26\",\n        \"city\": \"Jakarta\",\n        \"category\": \"Taman Hiburan\",\n        \"numberofpeople\": 2,\n        \"added_at\": \"2024-06-19T02:15:31.000Z\",\n        \"createdAt\": \"2024-06-18T21:14:39.000Z\",\n        \"updatedAt\": \"2024-06-18T21:14:39.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Itinerary DELETE",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Itinerary DELETE",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/itinerary/2",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"itinerary",
+								"2"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"c-dAuDFQrdjS3hezqxDTNgW7AOlYk\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "45ff988e6686fec577fe4ff88531430a;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:14:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "Unauthorized"
+				}
+			]
+		},
+		{
+			"name": "Itinerary POST",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Itinerary POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"city\":\"Yogyakarta\",\r\n    \"category\":\"Taman Wisata\",\r\n    \"numberofpeople\":\"2\",\r\n    \"start_date\": \"2024-06-10\",\r\n    \"end_date\": \"2024-06-11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/itinerary",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"itinerary"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"c-dAuDFQrdjS3hezqxDTNgW7AOlYk\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "3d8d326b49c0b64e737a73334597077d;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:17:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "Unauthorized"
+				}
+			]
+		},
+		{
+			"name": "Comment GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Comment GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/users/1/comments",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"users",
+								"1",
+								"comments"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"c-dAuDFQrdjS3hezqxDTNgW7AOlYk\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "d5e0877d96bc11e3271197330326f2a4;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:19:44 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "Unauthorized"
+				}
+			]
+		},
+		{
+			"name": "Comment POST",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Comment POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\":\"1\",\r\n    \"place_id\":\"1\",\r\n    \"user_comment\": \"Monumen Nasional atau yang disingkat dengan Monas atau Tugu Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang terletak tepat di tengah Lapangan Medan Merdeka, Jakarta Pusat. Monas didirikan untuk mengenang perlawanan dan perjuangan rakyat Indonesia dalam merebut kemerdekaan dari pemerintahan kolonial Kerajaan Belanda.\",\r\n    \"user_rating\": 9\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/users/1/comments",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"users",
+								"1",
+								"comments"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"c-dAuDFQrdjS3hezqxDTNgW7AOlYk\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "ce4aa162cf03b6aa9b79b11368960ca7;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:20:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "Unauthorized"
+				}
+			]
+		},
+		{
+			"name": "Images POST",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Images POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/ASUS SSD/Pictures/capstone1.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/image",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"image"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"89-/Z9LXvgbw7x8MeT44Ly297EytJo\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "36a508df007b23c1250deaff084a9d11;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 21:09:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "137"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Upload Success\",\n    \"image\": \"https://storage.googleapis.com/traveleasebucket/f9651e4b-86c5-4fe7-b3cd-9d12632aab7a-capstone1.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Image GET",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Image GET",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/image",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"image"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"bd-0K0v68frnXi7CM9yB6m7iEd/g90\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "f22abdaa093bfc8692da23d6b08701a1;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 20:36:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "189"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 5,\n        \"uploadedBy\": null,\n        \"image\": \"https://storage.googleapis.com/traveleasebucket/089caf0a-38e9-4931-a1a6-e6c62eef58dd-profilepict.jpg\",\n        \"createdAt\": \"2024-06-18\",\n        \"updatedAt\": \"2024-06-18\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Image GET Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Image GET Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://travelease-cj36obzooq-et.a.run.app/image/5",
+							"protocol": "https",
+							"host": [
+								"travelease-cj36obzooq-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"image",
+								"5"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "x-powered-by",
+							"value": "Express"
+						},
+						{
+							"key": "content-type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"c-dAuDFQrdjS3hezqxDTNgW7AOlYk\""
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "1d53076c8227f07bcec0c9588573938e;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 18 Jun 2024 21:12:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Alt-Svc",
+							"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+						}
+					],
+					"cookie": [],
+					"body": "Unauthorized"
+				}
+			]
+		}
+	]
+}
