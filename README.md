@@ -45,9 +45,7 @@ Development : [http://localhost:9000/{url}]
         "id": 1,
         "username": "John Doe" ,
         "email": "Johndoe@gmail.com",
-        "location": "Jakarta",
-        "createdAt": "2024-05-31T10:08:52.381Z",
-        "updatedAt": "2024-05-31T10:08:52.381Z"
+        "location": "Jakarta"
     }
 }
 
